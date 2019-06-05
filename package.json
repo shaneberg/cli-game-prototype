@@ -1,33 +1,65 @@
 {
   "name": "cli-game-prototype",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.0",
+  "author": "Sean Haneberg @seanhaneberg",
+  "bin": {
+    "cli-game-prototype": "./bin/run"
+  },
+  "bugs": "https://github.com/seanhaneberg/cli-game-prototype/issues",
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@oclif/command": "^1.5.14",
+    "@oclif/config": "^1.13.0",
+    "@oclif/plugin-help": "^2.2.0",
+    "fs": "0.0.1-security",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.5.1"
   },
   "devDependencies": {
-    "react-scripts": "3.0.1"
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@oclif/dev-cli": "^1.22.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^2.1.1",
+    "gh-pages": "^2.0.1",
+    "globby": "^8.0.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.5.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "engines": {
+    "node": ">=8.0.0"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/seanhaneberg/cli-game-prototype",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "cli-game-prototype",
+    "plugins": [
+      "@oclif/plugin-help"
     ]
+  },
+  "repository": "seanhaneberg/cli-game-prototype",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open",
+    "deploy": "gh-pages -d dist"
   }
 }

@@ -1,68 +1,68 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+cli-game-prototype
+==================
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
+[![Version](https://img.shields.io/npm/v/cli-game-prototype.svg)](https://npmjs.org/package/cli-game-prototype)
+[![Downloads/week](https://img.shields.io/npm/dw/cli-game-prototype.svg)](https://npmjs.org/package/cli-game-prototype)
+[![License](https://img.shields.io/npm/l/cli-game-prototype.svg)](https://github.com/seanhaneberg/cli-game-prototype/blob/master/package.json)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- toc -->
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
+# Usage
+<!-- usage -->
+```sh-session
+$ npm install -g cli-game-prototype
+$ cli-game-prototype COMMAND
+running command...
+$ cli-game-prototype (-v|--version|version)
+cli-game-prototype/0.0.0 darwin-x64 node-v10.4.0
+$ cli-game-prototype --help [COMMAND]
+USAGE
+  $ cli-game-prototype COMMAND
+...
+```
+<!-- usagestop -->
+# Commands
+<!-- commands -->
+* [`cli-game-prototype hello`](#cli-game-prototype-hello)
+* [`cli-game-prototype help [COMMAND]`](#cli-game-prototype-help-command)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## `cli-game-prototype hello`
 
-### `npm test`
+Describe the command here
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+USAGE
+  $ cli-game-prototype hello
 
-### `npm run build`
+OPTIONS
+  -n, --name=name  name to print
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+_See code: [src/commands/hello.js](https://github.com/seanhaneberg/cli-game-prototype/blob/v0.0.0/src/commands/hello.js)_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## `cli-game-prototype help [COMMAND]`
 
-### `npm run eject`
+display help for cli-game-prototype
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+USAGE
+  $ cli-game-prototype help [COMMAND]
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ARGUMENTS
+  COMMAND  command to show help for
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+OPTIONS
+  --all  see all commands in CLI
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.0/src/commands/help.ts)_
+<!-- commandsstop -->
